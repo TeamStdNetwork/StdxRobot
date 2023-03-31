@@ -1,11 +1,11 @@
 <p align="center">
-    <a href="https://github.com/Noob-Mukesh/MukeshRobot/stargazers"><img src="https://img.shields.io/github/stars/Noob-Mukesh/MukeshRobot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
+    <a href="https://github.com/StdNetwork/StdxRobot/stargazers"><img src="https://img.shields.io/github/stars/StdNetwork/StdxRobot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 </p>
 <p align="center">
-    <a href="https://github.com/Noob-Mukesh/MukeshRobot"> <img src="https://img.shields.io/github/repo-size/Noob-Mukesh/MukeshRobot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Noob-Mukesh/MukeshRobot/commits/prince"> <img src="https://img.shields.io/github/last-commit/Noob-Mukesh/MukeshRobot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Noob-Mukesh/MukeshRobot/issues"> <img src="https://img.shields.io/github/issues//MukeshRobot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Noob-Mukesh/MukeshRobot/network/members"> <img src="https://img.shields.io/github/forks/Noob-Mukesh/MukeshRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://github.com/StdNetwork/StdxRobot"> <img src="https://img.shields.io/github/repo-size/StdNetwork/StdxRobot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/StdNetwork/StdxRobot/commits/prince"> <img src="https://img.shields.io/github/last-commit/StdNetwork/StdxRobot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/StdNetwork/StdxRobot/issues"> <img src="https://img.shields.io/github/issues//StdNetwork?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/StdNetwork/StdxRobot/network/members"> <img src="https://img.shields.io/github/forks/StdNetwork/StdxRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 ━━━━━━━━━━━━━━━━━━━━━━
