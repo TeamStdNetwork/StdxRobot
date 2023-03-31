@@ -27,8 +27,8 @@ from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 from telethon import __version__ as tlhver
 
-import MukeshRobot.modules.sql.users_sql as sql
-from MukeshRobot import (
+import StdxRobot.modules.sql.users_sql as sql
+fromStdxRobot import (
     BOT_NAME,
     BOT_USERNAME,
     LOGGER,
@@ -42,9 +42,9 @@ from MukeshRobot import (
     telethn,
     updater,
 )
-from MukeshRobot.modules import ALL_MODULES
-from MukeshRobot.modules.helper_funcs.chat_status import is_user_admin
-from MukeshRobot.modules.helper_funcs.misc import paginate_modules
+from StdxRobot.modules import ALL_MODULES
+from StdxRobot.modules.helper_funcs.chat_status import is_user_admin
+from StdxRobot.modules.helper_funcs.misc import paginate_modules
 
 
 def get_readable_time(seconds: int) -> str:
@@ -94,7 +94,7 @@ buttons = [
         InlineKeyboardButton(text="⚡ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs⚡", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🏡 ᴀʙᴏᴜᴛ 🏡 ", callback_data="mukesh_"),
+        InlineKeyboardButton(text="🏡 ᴀʙᴏᴜᴛ 🏡 ", callback_data="stdx_"),
         InlineKeyboardButton(text="📍sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ📍", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
@@ -370,9 +370,9 @@ def help_button(update, context):
 
 
 @run_async
-def Mukesh_about_callback(update: Update, context: CallbackContext):
+def Stdx_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "mukesh_":
+    if query.data == "stdx_":
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
             text=f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {dispatcher.bot.first_name}*"
@@ -395,7 +395,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🚩sᴜᴩᴩᴏʀᴛ🚩", callback_data="mukesh_support"
+                            text="🚩sᴜᴩᴩᴏʀᴛ🚩", callback_data="stdx_support"
                         ),
                         InlineKeyboardButton(
                             text="✨ᴄᴏᴍᴍᴀɴᴅs✨", callback_data="help_back"
@@ -411,12 +411,12 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_back"),
+                        InlineKeyboardButton(text="◁", callback_data="stdx_back"),
                     ],
                 ]
             ),
         )
-    elif query.data == "mukesh_support":
+    elif query.data == "stdx_support":
         query.message.edit_text(
             text="||*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍᴇ.||*"
             f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {dispatcher.bot.first_name} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {dispatcher.bot.first_name}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
@@ -440,12 +440,12 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_"),
+                        InlineKeyboardButton(text="◁", callback_data="stdx_"),
                     ],
                 ]
             ),
         )
-    elif query.data == "mukesh_back":
+    elif query.data == "stdx_back":
         first_name = update.effective_user.first_name 
         query.message.edit_text(
             PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -822,9 +822,9 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 5910057231 and DONATION_LINK:
+        if OWNER_ID != 5842298151 and DONATION_LINK:
             update.effective_message.reply_text(
-                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://github.com/noob-mukesh/MukeshRobot)"
+                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://t.me/teamstdnetwork)"
                 f"\n\nʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]({DONATION_LINK})",
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
@@ -882,7 +882,7 @@ def main():
    **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
 ㅤ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
 ─╼⃝𖠁-----------------𖠁⃝╾─•
-ᴍᴀᴅᴇ ᴡɪᴛʜ ❤  ʙʏ [ᴍᴜᴋᴇsʜ]("t.me/mr_sukkun")""",
+ᴍᴀᴅᴇ ᴡɪᴛʜ ❤  ʙʏ [ꜱᴛᴅ ꜱᴜɴɴʏ]("t.me/STD_SUNNY")""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
@@ -902,7 +902,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(
-        Mukesh_about_callback, pattern=r"mukesh_"
+        Stdx_about_callback, pattern=r"stdx_"
     )
     Music_callback_handler = CallbackQueryHandler(
         Music_about_callback, pattern=r"Music_"
